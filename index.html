@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adjustable Text on Image</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- HTML Content -->
+    <div class="container">
+      <img class="image" src="eid_image.png" alt="Image" />
+      <div class="output-text" id="outputArea"></div>
+      <!-- Text overlay -->
+    </div>
+    <div id="textInputContainer">
+      <!-- Container for text input and button -->
+      <label for="textInput">Enter Text:</label>
+      <textarea
+        id="textInput"
+        rows="4"
+        cols="50"
+        oninput="limitInputLength()"
+        maxlength="80"
+        placeholder="Maximum 80 characters"
+      ></textarea>
+      <div id="maxCharacters">Max 80 characters allowed.</div>
+      <button
+        class="downloadButton"
+        id="downloadButton9_16"
+        onclick="downloadImage()"
+      >
+        Download Image (9:16)
+      </button>
+      <button
+        class="downloadButton"
+        id="downloadButton1_1"
+        onclick="downloadImage()"
+      >
+        Download Image (1:1)
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
